@@ -37,11 +37,17 @@ export default function initializeWebsite() {
   navBar.appendChild(contactLink);
   header.appendChild(navBar);
 
-  
+  //footer content------------------------------
+  const stockPhotosLink = document.createElement('a');
+  stockPhotosLink.href = "https://www.vecteezy.com/free-photos";
+  stockPhotosLink.textContent = 'Free Stock photos by Vecteezy';
+  footer.appendChild(stockPhotosLink);
 
   content.appendChild(header);
   content.appendChild(middle);
   content.appendChild(footer);
+
+  
 
   //middle content-------------------------------
   loadHome();
