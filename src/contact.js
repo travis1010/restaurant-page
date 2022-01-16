@@ -43,13 +43,15 @@ export default function loadContact() {
   const github = document.createElement('li');
   const githubLink = document.createElement('a');
   githubLink.href = 'https://github.com/travis1010/restaurant-page';
+  githubLink.target = '_blank'
   githubLink.textContent = 'GitHub';
   github.appendChild(githubLink);
 
   const top = document.createElement('li');
   const topLink = document.createElement('a');
   topLink.href = 'https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page';
-  topLink.textContent = 'TheOdinProject';
+  topLink.target = '_blank'
+  topLink.textContent = 'The Odin Project';
   top.appendChild(topLink);
   
   devContact.appendChild(about);
