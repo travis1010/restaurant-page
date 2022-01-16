@@ -9,7 +9,7 @@ export default function loadMenu() {
   menu.id = 'menu';
 
   const h2 = document.createElement('h2');
-  h2.id = 'menu-header';
+  h2.classList.add('page-header');
   h2.textContent = 'Menu';
 
   const column1 = document.createElement('div');
@@ -207,7 +207,7 @@ export default function loadMenu() {
   const sidesList = document.createElement('ul');
   for (let i = 1; i <= 5; i++) {
     const sides = document.createElement('li');
-    sides.textContent = `Side dish number ${i}`
+    sides.textContent = `Side Dish Number ${i}`
     sides.classList.add('menu-item');
     sidesList.appendChild(sides);
   }
@@ -215,14 +215,11 @@ export default function loadMenu() {
   sides.appendChild(sidesh3);
   sides.appendChild(sidesPara);
   sides.appendChild(sidesList);
-
-
   
   column3.appendChild(dessert);
   column3.appendChild(softDrinks);
   column3.appendChild(adultBev);
   column3.appendChild(sides);
-
 
   menu.appendChild(column1);
   menu.appendChild(column2);

@@ -122,12 +122,12 @@ h2 {
   text-justify: inter-word;
 }
 
-#menu {
+#menu{
   display: flex;
   justify-content: space-evenly;
 }
 
-#menu-header {
+.page-header {
   margin-top: 10px;
 }
 
@@ -159,6 +159,47 @@ h2 {
   font-size: 12px;
   padding-top: 0px;
   font-style: italic;
+}
+
+#contact {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+.contact-box {
+  background-color:rgb(139, 0, 0);
+  border-radius: 7px;
+  width: 400px;
+  margin: 40px;
+  list-style: none;
+}
+
+.contact-box li {
+  padding: 14px;
+}
+
+#contact-location:before {
+  font-weight: bold;
+  content: 'LOCATION: ';
+}
+
+#contact-order:before {
+  font-weight: bold;
+  content: 'ORDER: ';
+}
+
+#contact-nowHiring:before {
+  font-weight: bold;
+  content: 'NOW HIRING: ';
+}
+
+.contact-box a {
+  
+  color:rgb(226, 226, 226);
 }
 
 #footer {
